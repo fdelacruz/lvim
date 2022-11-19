@@ -27,6 +27,7 @@ lvim.plugins = {
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
   "lunarvim/darkplus.nvim",
+  "rebelot/kanagawa.nvim",
   "lunarvim/templeos.nvim",
   "kevinhwang91/nvim-bqf",
   "is0n/jaq-nvim",
