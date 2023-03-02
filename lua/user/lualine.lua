@@ -18,3 +18,4 @@ if lvim.colorscheme == "darkplus" then
 	lvim.builtin.lualine.sections.lualine_b = { branch }
 end
 
+lvim.builtin.lualine.style = "default"
