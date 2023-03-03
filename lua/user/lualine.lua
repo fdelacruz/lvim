@@ -18,4 +18,32 @@ if lvim.colorscheme == "darkplus" then
 	lvim.builtin.lualine.sections.lualine_b = { branch }
 end
 
-lvim.builtin.lualine.style = "default"
+-- lvim.builtin.lualine.style = "default"
+
+local lazy_status = {
+  function()
+    return require("lazy.status").updates()
+  end,
+  cond = require("lazy.status").has_updates,
+  color = { bg = "#282c34", fg = "#ff9e64" },
+}
+
+local lazy_stats = {
+  function()
+    local stats = require("lazy").stats()
+    local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+    return "" .. ms .. "ms"
+  end,
+  color = { fg = "#f6c177" },
+}
+
+local components = require "lvim.core.lualine.components"
+
+lvim.builtin.lualine.sections.lualine_x = {
+  lazy_status,
+  lazy_stats,
+  components.diagnostics,
+  components.lsp,
+  components.spaces,
+  components.filetype,
+}
