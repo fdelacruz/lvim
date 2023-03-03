@@ -18,6 +18,44 @@ if lvim.colorscheme == "darkplus" then
 	lvim.builtin.lualine.sections.lualine_b = { branch }
 end
 
+local mode_map = {
+  ['n']        = 'NORMAL',
+  ['i']        = 'INSERT',
+  ['R']        = 'REPLACE ',
+  ['c']        = 'COMMAND',
+  ['v']        = 'VISUAL',
+  ['V']        = 'VIS-LN',
+  ['']       = 'VIS-BLK ',
+  ['s']        = 'SELECT',
+  ['S']        = 'SEL-LN',
+  ['']       = 'SEL-BLK',
+  ['t']        = 'TERMINAL',
+  ['Rv']       = 'VIR-REP',
+  ['rm']       = '- More -',
+  ['r']        = "- Hit-Enter -",
+  ['r?']       = "- Confirm -",
+  ['cv']       = "Vim Ex Mode",
+  ['ce']       = "Normal Ex Mode",
+  ['!']        = "Shell Running",
+  ['ic']       = 'Insert mode completion |compl-generic|',
+  ['no']       = 'Operator-pending',
+  ['nov']      = 'Operator-pending',
+  ['noV']      = 'Operator-pending',
+  ['noCTRL-V'] = 'Operator-pending',
+  ['niI']      = 'INSERT (Normal)',
+  ['niR']      = 'REPLACE (Normal)',
+  ['niV']      = 'Virtual-Replace (Normal)',
+  ['ix']       = 'INSERT',
+  ['Rc']       = 'REPLACE',
+  ['Rx']       = 'REPLACE',
+}
+
+local mode = {
+  function()
+    return mode_map[vim.api.nvim_get_mode().mode] or "__"
+  end,
+}
+
 -- lvim.builtin.lualine.style = "default"
 
 local lazy_status = {
@@ -39,6 +77,7 @@ local lazy_stats = {
 
 local components = require "lvim.core.lualine.components"
 
+lvim.builtin.lualine.sections.lualine_a = { mode }
 lvim.builtin.lualine.sections.lualine_x = {
   lazy_status,
   lazy_stats,
