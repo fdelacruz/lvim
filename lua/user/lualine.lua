@@ -18,6 +18,19 @@ if lvim.colorscheme == "darkplus" then
 	lvim.builtin.lualine.sections.lualine_b = { branch }
 end
 
+vim.api.nvim_set_hl(0, "SLGitIcon", { fg = "#E8AB53", bg = "#303030" })
+vim.api.nvim_set_hl(0, "SLBranchName", { fg = "#D4D4D4", bg = "#303030", bold = false })
+
+local branch_icon = "%#SLGitIcon#" .. lvim.icons.git.Branch .. "%*" .. "%#SLBranchName#"
+
+local branch = {
+  "b:gitsigns_head",
+  icon = branch_icon,
+  color = { gui = "bold" },
+}
+
+lvim.builtin.lualine.sections.lualine_b = { branch }
+
 local mode_map = {
   ['n']        = 'NORMAL',
   ['i']        = 'INSERT',
