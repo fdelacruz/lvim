@@ -90,7 +90,27 @@ local lazy_stats = {
 
 local components = require "lvim.core.lualine.components"
 
+local hide_in_width = function()
+  return vim.o.columns > 80
+end
+
+local python_env = {
+    function()
+      local utils = require "lvim.core.lualine.utils"
+      if vim.bo.filetype == "python" then
+        local venv = os.getenv "CONDA_DEFAULT_ENV" or os.getenv "VIRTUAL_ENV"
+        if venv then
+          return string.format("(%s)", utils.env_cleanup(venv))
+        end
+      end
+      return ""
+    end,
+  color = { fg = "#abb2bf", bg = "#282c34" },
+  cond = hide_in_width,
+}
+
 lvim.builtin.lualine.sections.lualine_a = { mode }
+lvim.builtin.lualine.sections.lualine_c = { components.diff, python_env }
 lvim.builtin.lualine.sections.lualine_x = {
   lazy_status,
   lazy_stats,
