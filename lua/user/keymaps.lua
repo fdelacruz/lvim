@@ -79,6 +79,14 @@ keymap("n", "<m-v>", "<cmd>lua require('lsp_lines').toggle()<cr>", opts)
 keymap("n", "<m-/>", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
 keymap("x", "<m-/>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
 
+-- Trouble
+keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
+keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", opts)
+keymap("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>", opts)
+keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
+
 vim.api.nvim_set_keymap(
   "n",
   "<tab>",
