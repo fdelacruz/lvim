@@ -74,6 +74,14 @@ lvim.plugins = {
     "0x100101/lab.nvim",
     build = "cd js && npm ci",
   },
+  {
+    "folke/trouble.nvim",
+    cmd = { "TroubleToggle", "Trouble" },
+    config = {
+      auto_open = false,
+      use_diagnostic_signs = true, -- en
+    },
+  },
   -- { "tzachar/cmp-tabnine", build = "./install.sh" },
   -- "MunifTanjim/nui.nvim",
   -- {
