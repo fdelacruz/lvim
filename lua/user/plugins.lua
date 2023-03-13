@@ -58,7 +58,6 @@ lvim.plugins = {
     end,
   },
   "MunifTanjim/nui.nvim",
-  -- "jackMort/ChatGPT.nvim",
   {
     "jinh0/eyeliner.nvim",
     config = function()
