@@ -36,7 +36,6 @@ lvim.plugins = {
   -- "olexsmir/gopher.nvim",
   -- "leoluz/nvim-dap-go",
   "mfussenegger/nvim-dap-python",
-  "jose-elias-alvarez/typescript.nvim",
   "renerocksai/telekasten.nvim",
   -- "renerocksai/calendar-vim",
   {
