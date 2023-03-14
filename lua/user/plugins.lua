@@ -1,6 +1,5 @@
 -- Additional Plugins
 lvim.plugins = {
-  "LunarVim/synthwave84.nvim",
   "roobert/tailwindcss-colorizer-cmp.nvim",
   "lunarvim/github.nvim",
   "nvim-treesitter/playground",
@@ -34,8 +33,8 @@ lvim.plugins = {
   "TimUntersberger/neogit",
   "sindrets/diffview.nvim",
   "simrat39/rust-tools.nvim",
-  "olexsmir/gopher.nvim",
-  "leoluz/nvim-dap-go",
+  -- "olexsmir/gopher.nvim",
+  -- "leoluz/nvim-dap-go",
   "mfussenegger/nvim-dap-python",
   "jose-elias-alvarez/typescript.nvim",
   "mxsdev/nvim-dap-vscode-js",
