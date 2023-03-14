@@ -24,3 +24,4 @@ reload "user.neogit"
 reload "user.colorizer"
 reload "user.lualine"
 reload "user.whichkey"
+require("leap").add_default_mappings()
