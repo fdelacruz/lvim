@@ -1,6 +1,5 @@
 -- Additional Plugins
 lvim.plugins = {
-  "ellisonleao/gruvbox.nvim",
   "LunarVim/synthwave84.nvim",
   "roobert/tailwindcss-colorizer-cmp.nvim",
   "lunarvim/github.nvim",
