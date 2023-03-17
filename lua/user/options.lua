@@ -15,6 +15,18 @@ lvim.builtin.breadcrumbs.active = true
 -- lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.dap.active = true
 lvim.keys.term_mode = { ["<C-l>"] = false }
+
+-- linters and formatters <https://www.lunarvim.org/docs/languages#lintingformatting>
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  { command = "stylua" },
+  -- {
+  --   command = "prettier",
+  --   extra_args = { "--print-width", "100" },
+  --   filetypes = { "typescript", "typescriptreact" },
+  -- },
+}
+
 -- lvim.builtin.cmp.cmdline.enable = false
 -- lvim.builtin.cmp.window.documentation = false
 -- lvim.builtin.cmp.window.documentation = {
