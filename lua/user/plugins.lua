@@ -10,7 +10,7 @@ lvim.plugins = {
   "j-hui/fidget.nvim",
   "christianchiarulli/nvim-ts-autotag",
   "kylechui/nvim-surround",
-  "christianchiarulli/harpoon",
+  "ThePrimeagen/harpoon",
   "MattesGroeger/vim-bookmarks",
   "NvChad/nvim-colorizer.lua",
   "ghillb/cybu.nvim",
