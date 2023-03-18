@@ -10,7 +10,12 @@ lvim.plugins = {
   "j-hui/fidget.nvim",
   "christianchiarulli/nvim-ts-autotag",
   "kylechui/nvim-surround",
-  "ThePrimeagen/harpoon",
+  {
+    "ThePrimeagen/harpoon",
+    event = { "BufReadPost", "BufNewFile" },
+    enabled = true,
+    config = true,
+  },
   "MattesGroeger/vim-bookmarks",
   "NvChad/nvim-colorizer.lua",
   "ghillb/cybu.nvim",
