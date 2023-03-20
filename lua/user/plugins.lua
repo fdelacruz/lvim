@@ -6,7 +6,11 @@ lvim.plugins = {
   -- "christianchiarulli/nvim-ts-rainbow",
   -- "karb94/neoscroll.nvim",
   "opalmay/vim-smoothie",
-  "j-hui/fidget.nvim",
+  {
+    "j-hui/fidget.nvim",
+    event = 'VeryLazy',
+    config = true,
+  },
   "christianchiarulli/nvim-ts-autotag",
   "kylechui/nvim-surround",
   {
