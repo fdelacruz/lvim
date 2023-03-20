@@ -59,7 +59,11 @@ lvim.plugins = {
   "simrat39/rust-tools.nvim",
   -- "olexsmir/gopher.nvim",
   -- "leoluz/nvim-dap-go",
-  "mfussenegger/nvim-dap-python",
+  {
+    "mfussenegger/nvim-dap-python",
+    event = "BufEnter *.py",
+    dependencies = { "mfussenegger/nvim-dap" },
+  },
   -- "renerocksai/calendar-vim",
   {
     "saecki/crates.nvim",
