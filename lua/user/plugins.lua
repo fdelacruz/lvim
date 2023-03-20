@@ -39,7 +39,12 @@ lvim.plugins = {
     enabled = true,
     config = true,
   },
-  "sindrets/diffview.nvim",
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen" },
+    enabled = true,
+    config = true,
+  },
   "simrat39/rust-tools.nvim",
   -- "olexsmir/gopher.nvim",
   -- "leoluz/nvim-dap-go",
