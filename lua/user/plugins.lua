@@ -12,7 +12,11 @@ lvim.plugins = {
     config = true,
   },
   "christianchiarulli/nvim-ts-autotag",
-  "kylechui/nvim-surround",
+  {
+    "kylechui/nvim-surround",
+    event = 'VeryLazy',
+    config = true,
+  },
   {
     "ThePrimeagen/harpoon",
     event = { "BufReadPost", "BufNewFile" },
