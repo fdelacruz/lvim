@@ -26,7 +26,10 @@ lvim.plugins = {
   "MattesGroeger/vim-bookmarks",
   "NvChad/nvim-colorizer.lua",
   "ghillb/cybu.nvim",
-  "moll/vim-bbye",
+  {
+    "moll/vim-bbye",
+    event = 'BufEnter'
+  },
   "folke/todo-comments.nvim",
   "windwp/nvim-spectre",
   "f-person/git-blame.nvim",
@@ -62,6 +65,7 @@ lvim.plugins = {
     "saecki/crates.nvim",
     version = "v0.3.0",
     dependencies = { "nvim-lua/plenary.nvim" },
+    event = "BufEnter *.rs",
     config = function()
       require("crates").setup {
         null_ls = {
