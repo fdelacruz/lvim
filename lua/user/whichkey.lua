@@ -134,7 +134,7 @@ lvim.builtin.which_key.mappings["o"] = {
   -- t = { '<cmd>lua require("user.functions").toggle_tabline()<cr>', "Tabline" },
 }
 
-lvim.builtin.which_key.mappings[";"] = nil
+-- lvim.builtin.which_key.mappings[";"] = nil
 -- lvim.builtin.which_key.mappings["c"] = nil
 lvim.builtin.which_key.mappings["L"] = nil
 lvim.builtin.which_key.mappings["s"] = nil
