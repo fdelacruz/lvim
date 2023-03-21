@@ -7,13 +7,34 @@ lvim.plugins = {
   "opalmay/vim-smoothie",
   {
     "j-hui/fidget.nvim",
-    event = 'VeryLazy',
+    event = "VeryLazy",
     config = true,
   },
-  "windwp/nvim-ts-autotag",
+  {
+    "windwp/nvim-ts-autotag",
+    ft = {
+      "html",
+      "javascript",
+      "typescript",
+      "javascriptreact",
+      "typescriptreact",
+      "svelte",
+      "vue",
+      "tsx",
+      "jsx",
+      "rescript",
+      "xml",
+      "php",
+      "markdown",
+      "glimmer",
+      "handlebars",
+      "hbs",
+      "htmldjango",
+    },
+  },
   {
     "kylechui/nvim-surround",
-    event = 'VeryLazy',
+    event = "VeryLazy",
     config = true,
   },
   {
@@ -27,7 +48,7 @@ lvim.plugins = {
   "ghillb/cybu.nvim",
   {
     "moll/vim-bbye",
-    event = 'BufEnter'
+    event = "BufEnter",
   },
   "folke/todo-comments.nvim",
   {
