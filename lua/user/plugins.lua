@@ -10,7 +10,7 @@ lvim.plugins = {
     event = 'VeryLazy',
     config = true,
   },
-  "christianchiarulli/nvim-ts-autotag",
+  "windwp/nvim-ts-autotag",
   {
     "kylechui/nvim-surround",
     event = 'VeryLazy',
