@@ -30,7 +30,10 @@ lvim.plugins = {
     event = 'BufEnter'
   },
   "folke/todo-comments.nvim",
-  "windwp/nvim-spectre",
+  {
+    "windwp/nvim-spectre",
+    cmd = "Spectre",
+  },
   "f-person/git-blame.nvim",
   "ruifm/gitlinker.nvim",
   "mattn/vim-gist",
