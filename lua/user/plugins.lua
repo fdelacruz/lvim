@@ -1,6 +1,5 @@
 -- Additional Plugins
 lvim.plugins = {
-  "lunarvim/github.nvim",
   "nvim-treesitter/nvim-treesitter-textobjects",
   -- "christianchiarulli/nvim-ts-rainbow",
   -- "karb94/neoscroll.nvim",
