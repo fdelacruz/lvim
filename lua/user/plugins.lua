@@ -110,7 +110,7 @@ lvim.plugins = {
       }
     end,
   },
-  { "christianchiarulli/telescope-tabs", branch = "chris" },
+  "LukasPietzschmann/telescope-tabs",
   "monaqa/dial.nvim",
   {
     "0x100101/lab.nvim",
