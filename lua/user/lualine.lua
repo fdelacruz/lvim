@@ -112,8 +112,6 @@ local python_env = {
 lvim.builtin.lualine.sections.lualine_a = { mode }
 lvim.builtin.lualine.sections.lualine_c = { components.diff, python_env }
 lvim.builtin.lualine.sections.lualine_x = {
-  lazy_status,
-  lazy_stats,
   components.diagnostics,
   components.lsp,
   components.spaces,
