@@ -60,7 +60,6 @@ lvim.plugins = {
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
   "rebelot/kanagawa.nvim",
-  "is0n/jaq-nvim",
   -- "hrsh7th/cmp-emoji",
   "ggandor/leap.nvim",
   "nacro90/numb.nvim",
