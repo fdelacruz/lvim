@@ -112,10 +112,6 @@ lvim.plugins = {
   },
   "LukasPietzschmann/telescope-tabs",
   {
-    "0x100101/lab.nvim",
-    build = "cd js && npm ci",
-  },
-  {
     "folke/trouble.nvim",
     cmd = { "TroubleToggle", "Trouble" },
     config = {
