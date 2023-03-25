@@ -111,7 +111,6 @@ lvim.plugins = {
     end,
   },
   "LukasPietzschmann/telescope-tabs",
-  "monaqa/dial.nvim",
   {
     "0x100101/lab.nvim",
     build = "cd js && npm ci",
