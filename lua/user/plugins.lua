@@ -116,7 +116,11 @@ lvim.plugins = {
       use_diagnostic_signs = true, -- en
     },
   },
-  -- { "tzachar/cmp-tabnine", build = "./install.sh" },
+  {
+    "tzachar/cmp-tabnine",
+    build = "./install.sh",
+    dependencies = { "hrsh7th/nvim-cmp" },
+  },
   -- "MunifTanjim/nui.nvim",
   -- {
   --   "folke/noice.nvim",
