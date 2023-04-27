@@ -60,6 +60,7 @@ lvim.plugins = {
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
   "rebelot/kanagawa.nvim",
+  { "catppuccin/nvim", name = "catppuccin" },
   -- "hrsh7th/cmp-emoji",
   "ggandor/leap.nvim",
   "nacro90/numb.nvim",
