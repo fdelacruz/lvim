@@ -6,6 +6,18 @@ require "user.lsp.languages.sh"
 require "user.lsp.languages.emmet"
 require "user.lsp.languages.css"
 
+-- lvim.lsp.diagnostics = {
+--     signs = {
+--       active = true,
+--       values = {
+--         { name = "DiagnosticSignError", text = lvim.icons.diagnostics.BoldError},
+--         { name = "DiagnosticSignWarn", text = lvim.icons.diagnostics.BoldWarning },
+--         { name = "DiagnosticSignHint", text = lvim.icons.diagnostics.BoldHint },
+--         { name = "DiagnosticSignInfo", text = lvim.icons.diagnostics.BoldInformation },
+--       },
+--     },
+-- }
+
 lvim.lsp.diagnostics.virtual_text = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
