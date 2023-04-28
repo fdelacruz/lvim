@@ -109,8 +109,10 @@ local python_env = {
   cond = hide_in_width,
 }
 
+local file_path = { 'filename', file_status = false, path = 1 }
+
 lvim.builtin.lualine.sections.lualine_a = { mode }
-lvim.builtin.lualine.sections.lualine_c = { components.diff, python_env }
+lvim.builtin.lualine.sections.lualine_c = { file_path, components.diff, python_env }
 lvim.builtin.lualine.sections.lualine_x = {
   components.diagnostics,
   components.lsp,
