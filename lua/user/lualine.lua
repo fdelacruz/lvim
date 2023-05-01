@@ -100,12 +100,14 @@ local python_env = {
       if vim.bo.filetype == "python" then
         local venv = os.getenv "CONDA_DEFAULT_ENV" or os.getenv "VIRTUAL_ENV"
         if venv then
-          return string.format("(%s)", utils.env_cleanup(venv))
+          local icons = require "nvim-web-devicons"
+          local py_icon, _ = icons.get_icon ".py"
+          return string.format(" " .. py_icon .. " %s", utils.env_cleanup(venv))
         end
       end
       return ""
     end,
-  color = { fg = "#abb2bf" },
+  color = { fg = "#ffbc03" },
   cond = hide_in_width,
 }
 
