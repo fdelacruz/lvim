@@ -25,6 +25,7 @@ lvim.builtin.which_key.mappings["d"] = {
 }
 lvim.builtin.which_key.mappings["f"] = {
   name = "Find",
+  a = { "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>", "Find hidden files" },
   b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
   c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
   f = { "<cmd>Telescope find_files<cr>", "Find files" },
