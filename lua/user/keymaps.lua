@@ -87,18 +87,10 @@ keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", opts)
 keymap("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>", opts)
 keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
 
-vim.api.nvim_set_keymap(
-  "n",
-  "<tab>",
-  "<cmd>lua require('telescope').extensions.harpoon.marks(require('telescope.themes').get_dropdown{previewer = false, initial_mode='normal', prompt_title='Harpoon'})<cr>",
-  opts
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<s-tab>",
-  "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false, initial_mode='normal'})<cr>",
-  opts
-)
+-- Buffers
+vim.api.nvim_set_keymap("n", "<tab>", ":bn<cr>", opts)
+vim.api.nvim_set_keymap("n", "<s-tab>", ":bp<cr>", opts)
+vim.api.nvim_set_keymap("n", "<leader>bd", ":bd<cr>", opts) -- from Doom Emacs
 
 vim.cmd [[
   function! QuickFixToggle()
