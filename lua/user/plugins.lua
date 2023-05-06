@@ -2,8 +2,8 @@
 lvim.plugins = {
   "nvim-treesitter/nvim-treesitter-textobjects",
   -- "christianchiarulli/nvim-ts-rainbow",
-  -- "karb94/neoscroll.nvim",
-  "opalmay/vim-smoothie",
+  "karb94/neoscroll.nvim",
+  -- "opalmay/vim-smoothie",
   {
     "j-hui/fidget.nvim",
     event = "VeryLazy",
