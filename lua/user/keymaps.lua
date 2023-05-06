@@ -14,11 +14,11 @@ keymap("n", "<C-i>", "<C-i>", opts)
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<m-h>", "<C-w>h", opts)
-keymap("n", "<m-j>", "<C-w>j", opts)
-keymap("n", "<m-k>", "<C-w>k", opts)
-keymap("n", "<m-l>", "<C-w>l", opts)
-keymap("n", "<m-tab>", "<c-6>", opts)
+keymap("n", "<c-h>", "<C-w>h", opts)
+keymap("n", "<c-j>", "<C-w>j", opts)
+keymap("n", "<c-k>", "<C-w>k", opts)
+keymap("n", "<c-l>", "<C-w>l", opts)
+keymap("n", "<c-tab>", "<c-6>", opts)
 
 function _G.set_terminal_keymaps()
   vim.api.nvim_buf_set_keymap(0, "t", "<m-h>", [[<C-\><C-n><C-W>h]], opts)
@@ -41,9 +41,14 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
-keymap("n", "<c-j>", "<c-d>", opts)
-keymap("n", "<c-k>", "<c-u>", opts)
-keymap("n", "<c-m>", "<s-m>", opts)
+-- Smooth scrolling
+keymap("n", "<m-j>", "<c-d>", opts)
+keymap("n", "<m-k>", "<c-u>", opts)
+keymap("n", "<m-m>", "<s-m>", opts)
+
+-- Move current (visual) line / block with J/K
+keymap("v", "J", ":m '>+1<CR>gv=gv")
+keymap("v", "K", ":m '<-2<CR>gv=gv")
 
 keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
