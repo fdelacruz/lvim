@@ -109,6 +109,8 @@ vim.cmd [[
 
 keymap("n", "<m-q>", ":call QuickFixToggle()<cr>", opts)
 
+keymap("n", "<leader>u", "<cmd>MundoToggle<cr>", opts)
+
 M.show_documentation = function()
   local filetype = vim.bo.filetype
   if vim.tbl_contains({ "vim", "help" }, filetype) then

@@ -122,6 +122,11 @@ lvim.plugins = {
     build = "./install.sh",
     dependencies = { "hrsh7th/nvim-cmp" },
   },
+  {
+    "simnalamburt/vim-mundo",
+    cmd =  "MundoToggle",
+  }
+
   -- "MunifTanjim/nui.nvim",
   -- {
   --   "folke/noice.nvim",
