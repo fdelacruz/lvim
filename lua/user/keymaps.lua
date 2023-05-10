@@ -29,18 +29,6 @@ end
 
 vim.cmd "autocmd! TermOpen term://* lua set_terminal_keymaps()"
 
--- Tabs --
--- keymap("n", "\\", ":tabnew %<cr>", opts)
--- keymap("n", "\\", ":tabnew %<cr>", opts)
--- keymap("n", "<s-\\>", ":tabclose<cr>", opts)
--- keymap("n", "<s-\\>", ":tabonly<cr>", opts)
-
--- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
 -- Smooth scrolling
 keymap("n", "<M-j>", "<C-d>", opts)
 keymap("n", "<M-k>", "<C-u>", opts)
