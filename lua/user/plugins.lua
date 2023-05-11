@@ -1,7 +1,6 @@
 -- Additional Plugins
 lvim.plugins = {
   "nvim-treesitter/nvim-treesitter-textobjects",
-  -- "christianchiarulli/nvim-ts-rainbow",
   "karb94/neoscroll.nvim",
   {
     "j-hui/fidget.nvim",
@@ -60,7 +59,6 @@ lvim.plugins = {
   "lvimuser/lsp-inlayhints.nvim",
   "rebelot/kanagawa.nvim",
   { "catppuccin/nvim", name = "catppuccin" },
-  -- "hrsh7th/cmp-emoji",
   "ggandor/leap.nvim",
   "nacro90/numb.nvim",
   {
@@ -76,14 +74,11 @@ lvim.plugins = {
     config = true,
   },
   "simrat39/rust-tools.nvim",
-  -- "olexsmir/gopher.nvim",
-  -- "leoluz/nvim-dap-go",
   {
     "mfussenegger/nvim-dap-python",
     event = "BufEnter *.py",
     dependencies = { "mfussenegger/nvim-dap" },
   },
-  -- "renerocksai/calendar-vim",
   {
     "saecki/crates.nvim",
     version = "v0.3.0",
@@ -125,17 +120,4 @@ lvim.plugins = {
     "simnalamburt/vim-mundo",
     cmd =  "MundoToggle",
   }
-
-  -- "MunifTanjim/nui.nvim",
-  -- {
-  --   "folke/noice.nvim",
-  --   event = "VimEnter",
-  --   config = function()
-  --     require("noice").setup()
-  --   end,
-  -- },
-
-  -- https://github.com/jose-elias-alvarez/typescript.nvim
-  -- "rmagatti/auto-session",
-  -- "rmagatti/session-lens"
 }
