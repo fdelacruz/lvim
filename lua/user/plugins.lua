@@ -119,6 +119,21 @@ lvim.plugins = {
   },
   {
     "simnalamburt/vim-mundo",
-    cmd =  "MundoToggle",
-  }
+    cmd = "MundoToggle",
+  },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-neotest/neotest-python",
+      "nvim-neotest/neotest-plenary",
+      "haydenmeade/neotest-jest",
+      "nvim-neotest/neotest-vim-test",
+    },
+    config = function()
+      require("user.neotest").setup()
+    end,
+  },
 }

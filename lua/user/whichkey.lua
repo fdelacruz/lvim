@@ -134,7 +134,19 @@ lvim.builtin.which_key.mappings["o"] = {
   -- s = { '<Cmd>lua require("user.functions").toggle_option("spell")<CR>', "Spell" },
   -- t = { '<Cmd>lua require("user.functions").toggle_tabline()<CR>', "Tabline" },
 }
-
+lvim.builtin.which_key.mappings["n"] = {
+  name = "Neotest",
+  a = { "<cmd>lua require('neotest').run.attach()<CR>", "Attach" },
+  f = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", "Run File" },
+  F = { "<cmd>lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>", "Debug File" },
+  l = { "<cmd>lua require('neotest').run.run_last()<CR>", "Run Last" },
+  L = { "<cmd>lua require('neotest').run.run_last({ strategy = 'dap' })<CR>", "Debug Last" },
+  n = { "<cmd>lua require('neotest').run.run()<CR>", "Run Nearest" },
+  N = { "<cmd>lua require('neotest').run.run({strategy = 'dap'})<CR>", "Debug Nearest" },
+  o = { "<cmd>lua require('neotest').output.open({ enter = true })<CR>", "Output" },
+  S = { "<cmd>lua require('neotest').run.stop()<CR>", "Stop" },
+  s = { "<cmd>lua require('neotest').summary.toggle()<CR>", "Summary" },
+}
 -- lvim.builtin.which_key.mappings[";"] = nil
 -- lvim.builtin.which_key.mappings["c"] = nil
 lvim.builtin.which_key.mappings["L"] = nil
