@@ -132,6 +132,7 @@ lvim.plugins = {
       "haydenmeade/neotest-jest",
       "nvim-neotest/neotest-vim-test",
     },
+    lazy = true,
     config = function()
       require("user.neotest").setup()
     end,
