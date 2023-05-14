@@ -1,5 +1,6 @@
 -- Additional Plugins
 lvim.plugins = {
+  "nathom/filetype.nvim",
   "nvim-treesitter/nvim-treesitter-textobjects",
   "karb94/neoscroll.nvim",
   {
