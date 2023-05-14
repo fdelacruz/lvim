@@ -9,7 +9,7 @@ keymap("n", "<Space>", "", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-keymap("n", "<C-Space>", "<Cmd>WhichKey \\<space><CR>", opts)
+keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><CR>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
 
 -- Normal --
@@ -50,7 +50,7 @@ keymap("x", "p", [["_dP]])
 -- keymap("v", "p", '"_dp', opts)
 -- keymap("v", "P", '"_dP', opts)
 
-keymap("n", "Q", "<Cmd>Bdelete!<CR>", opts)
+keymap("n", "Q", "<cmd>Bdelete!<CR>", opts)
 
 keymap(
   "n",
@@ -58,22 +58,22 @@ keymap(
   [[:echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>]],
   opts
 )
-keymap("n", "<F7>", "<Cmd>TSHighlightCapturesUnderCursor<CR>", opts)
-keymap("n", "<C-z>", "<Cmd>ZenMode<CR>", opts)
+keymap("n", "<F7>", "<cmd>TSHighlightCapturesUnderCursor<CR>", opts)
+keymap("n", "<C-z>", "<cmd>ZenMode<CR>", opts)
 keymap("n", "-", ":lua require'lir.float'.toggle()<CR>", opts)
 keymap("n", "gx", [[:silent execute '!$BROWSER ' . shellescape(expand('<cfile>'), 1)<CR>]], opts)
-keymap("n", "<M-v>", "<Cmd>lua require('lsp_lines').toggle()<CR>", opts)
+keymap("n", "<M-v>", "<cmd>lua require('lsp_lines').toggle()<CR>", opts)
 
-keymap("n", "<M-/>", "<Cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
-keymap("x", "<M-/>", '<ESC><Cmd>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
+keymap("n", "<M-/>", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
+keymap("x", "<M-/>", '<ESC><cmd>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
 
 -- Trouble
-keymap("n", "<Leader>xx", "<Cmd>TroubleToggle<CR>", opts)
-keymap("n", "<Leader>xw", "<Cmd>TroubleToggle workspace_diagnostics<CR>", opts)
-keymap("n", "<Leader>xd", "<Cmd>TroubleToggle document_diagnostics<CR>", opts)
-keymap("n", "<Leader>xq", "<Cmd>TroubleToggle quickfix<CR>", opts)
-keymap("n", "<Leader>xl", "<Cmd>TroubleToggle loclist<CR>", opts)
-keymap("n", "gR", "<Cmd>TroubleToggle lsp_references<CR>", opts)
+keymap("n", "<Leader>xx", "<cmd>TroubleToggle<CR>", opts)
+keymap("n", "<Leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>", opts)
+keymap("n", "<Leader>xd", "<cmd>TroubleToggle document_diagnostics<CR>", opts)
+keymap("n", "<Leader>xq", "<cmd>TroubleToggle quickfix<CR>", opts)
+keymap("n", "<Leader>xl", "<cmd>TroubleToggle loclist<CR>", opts)
+keymap("n", "gR", "<cmd>TroubleToggle lsp_references<CR>", opts)
 
 -- Buffers
 vim.api.nvim_set_keymap("n", "<Tab>", ":bn<CR>", opts)
@@ -92,7 +92,7 @@ vim.cmd [[
 
 keymap("n", "<M-q>", ":call QuickFixToggle()<CR>", opts)
 
-keymap("n", "<Leader>u", "<Cmd>MundoToggle<CR>", opts)
+keymap("n", "<Leader>u", "<cmd>MundoToggle<CR>", opts)
 
 M.show_documenTation = function()
   local filetype = vim.bo.filetype
