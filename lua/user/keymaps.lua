@@ -29,11 +29,6 @@ end
 
 vim.cmd "autocmd! TermOpen term://* lua set_terminal_keymaps()"
 
--- Smooth scrolling
-keymap("n", "<M-j>", "<C-d>", opts)
-keymap("n", "<M-k>", "<C-u>", opts)
-keymap("n", "<M-m>", "<S-m>", opts)
-
 -- Move current (visual) line / block with J/K
 keymap("v", "J", ":m '>+1<CR>gv=gv")
 keymap("v", "K", ":m '<-2<CR>gv=gv")
