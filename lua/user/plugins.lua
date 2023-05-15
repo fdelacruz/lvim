@@ -28,7 +28,7 @@ lvim.plugins = {
   },
   {
     "f-person/git-blame.nvim",
-    lazy = true
+    event = "VeryLazy",
   },
   {
     "ruifm/gitlinker.nvim",
