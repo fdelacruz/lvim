@@ -80,7 +80,6 @@ lvim.plugins = {
       }
     end,
   },
-  "MunifTanjim/nui.nvim",
   {
     "jinh0/eyeliner.nvim",
     config = function()
