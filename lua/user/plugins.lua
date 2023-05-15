@@ -21,10 +21,6 @@ lvim.plugins = {
   },
   "MattesGroeger/vim-bookmarks",
   "NvChad/nvim-colorizer.lua",
-  {
-    "moll/vim-bbye",
-    event = "BufEnter",
-  },
   "folke/todo-comments.nvim",
   {
     "windwp/nvim-spectre",
