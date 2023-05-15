@@ -32,7 +32,10 @@ lvim.plugins = {
   },
   "f-person/git-blame.nvim",
   "ruifm/gitlinker.nvim",
-  "mattn/vim-gist",
+  {
+    "mattn/vim-gist",
+    dependencies =   { "mattn/webapi-vim" }
+  },
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
   { "catppuccin/nvim", name = "catppuccin" },
