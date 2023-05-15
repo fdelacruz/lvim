@@ -30,11 +30,18 @@ lvim.plugins = {
     "windwp/nvim-spectre",
     cmd = "Spectre",
   },
-  "f-person/git-blame.nvim",
-  "ruifm/gitlinker.nvim",
+  {
+    "f-person/git-blame.nvim",
+    lazy = true
+  },
+  {
+    "ruifm/gitlinker.nvim",
+    lazy = true
+  },
   {
     "mattn/vim-gist",
-    dependencies =   { "mattn/webapi-vim" }
+    dependencies =   { "mattn/webapi-vim" },
+    lazy = true
   },
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
