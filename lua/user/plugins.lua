@@ -43,7 +43,6 @@ lvim.plugins = {
   },
   "MattesGroeger/vim-bookmarks",
   "NvChad/nvim-colorizer.lua",
-  "ghillb/cybu.nvim",
   {
     "moll/vim-bbye",
     event = "BufEnter",
