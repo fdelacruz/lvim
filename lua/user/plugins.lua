@@ -58,7 +58,6 @@ lvim.plugins = {
   "mattn/vim-gist",
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
-  "rebelot/kanagawa.nvim",
   { "catppuccin/nvim", name = "catppuccin" },
   "ggandor/leap.nvim",
   "nacro90/numb.nvim",
