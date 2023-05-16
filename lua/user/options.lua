@@ -2,7 +2,7 @@ lvim.colorscheme = "catppuccin"
 lvim.log.level = "warn"
 lvim.builtin.alpha.active = true
 
-vim.diagnostic.config { float = { focusable = true } }
+vim.diagnostic.config { virtual_text = false }
 
 lvim.lsp.installer.setup.automatic_installation = false
 lvim.reload_config_on_save = false
