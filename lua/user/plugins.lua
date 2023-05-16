@@ -109,9 +109,7 @@ lvim.plugins = {
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-python",
-      "nvim-neotest/neotest-plenary",
       "haydenmeade/neotest-jest",
-      "nvim-neotest/neotest-vim-test",
     },
     lazy = true,
     config = function()
