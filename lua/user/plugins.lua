@@ -140,6 +140,9 @@ lvim.plugins = {
     "rcarriga/nvim-notify",
     lazy = true,
     config = function()
+      require("notify").setup {
+        timeout = 175,
+      }
       vim.notify = require("notify")
     end,
   },
