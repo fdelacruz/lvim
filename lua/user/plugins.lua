@@ -116,4 +116,24 @@ lvim.plugins = {
       require("user.neotest").setup()
     end,
   },
+  {
+    "stevearc/overseer.nvim",
+    lazy = true,
+    cmd = {
+      "OverseerToggle",
+      "OverseerOpen",
+      "OverseerRun",
+      "OverseerBuild",
+      "OverseerClose",
+      "OverseerLoadBundle",
+      "OverseerSaveBundle",
+      "OverseerDeleteBundle",
+      "OverseerRunCmd",
+      "OverseerQuickAction",
+      "OverseerTaskAction",
+    },
+    config = function()
+      require("overseer").setup()
+    end,
+  }
 }

@@ -134,6 +134,20 @@ lvim.builtin.which_key.mappings["o"] = {
   -- s = { '<cmd>lua require("user.functions").toggle_option("spell")<CR>', "Spell" },
   -- t = { '<cmd>lua require("user.functions").toggle_tabline()<CR>', "Tabline" },
 }
+lvim.builtin.which_key.mappings["O"]  = {
+  name = "Overseer",
+  C = { "<cmd>OverseerClose<cr>", "OverseerClose" },
+  a = { "<cmd>OverseerTaskAction<cr>", "OverseerTaskAction" },
+  b = { "<cmd>OverseerBuild<cr>", "OverseerBuild" },
+  c = { "<cmd>OverseerRunCmd<cr>", "OverseerRunCmd" },
+  d = { "<cmd>OverseerDeleteBundle<cr>", "OverseerDeleteBundle" },
+  l = { "<cmd>OverseerLoadBundle<cr>", "OverseerLoadBundle" },
+  o = { "<cmd>OverseerOpen!<cr>", "OverseerOpen" },
+  q = { "<cmd>OverseerQuickAction<cr>", "OverseerQuickAction" },
+  r = { "<cmd>OverseerRun<cr>", "OverseerRun" },
+  s = { "<cmd>OverseerSaveBundle<cr>", "OverseerSaveBundle" },
+  t = { "<cmd>OverseerToggle!<cr>", "OverseerToggle" },
+}
 lvim.builtin.which_key.mappings["n"] = {
   name = "Neotest",
   a = { "<cmd>lua require('neotest').run.attach()<CR>", "Attach" },
