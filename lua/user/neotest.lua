@@ -13,6 +13,14 @@ function M.setup()
       },
       require "neotest-jest",
     },
+    -- overseer.nvim
+    consumers = {
+      overseer = require "neotest.consumers.overseer",
+    },
+    overseer = {
+      enabled = true,
+      force_default = true,
+    },
   }
 end
 
