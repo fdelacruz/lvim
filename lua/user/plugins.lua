@@ -135,5 +135,12 @@ lvim.plugins = {
     config = function()
       require("overseer").setup()
     end,
-  }
+  },
+  {
+    "rcarriga/nvim-notify",
+    lazy = true,
+    config = function()
+      vim.notify = require("notify")
+    end,
+  },
 }
