@@ -98,11 +98,6 @@ lvim.plugins = {
     },
   },
   {
-    "tzachar/cmp-tabnine",
-    build = "./install.sh",
-    dependencies = { "hrsh7th/nvim-cmp" },
-  },
-  {
     "simnalamburt/vim-mundo",
     cmd = "MundoToggle",
   },
