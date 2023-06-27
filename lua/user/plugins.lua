@@ -32,12 +32,12 @@ lvim.plugins = {
   },
   {
     "ruifm/gitlinker.nvim",
-    lazy = true
+    lazy = true,
   },
   {
     "mattn/vim-gist",
-    dependencies =   { "mattn/webapi-vim" },
-    lazy = true
+    dependencies = { "mattn/webapi-vim" },
+    lazy = true,
   },
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
@@ -102,6 +102,18 @@ lvim.plugins = {
     cmd = "MundoToggle",
   },
   {
+    "vim-test/vim-test",
+    cmd = {
+      "TestSuite",
+      "TestFile",
+      "TestEdit",
+      "TestNearest",
+      "TestLast",
+      "TestVisit",
+      "TestInfo",
+    },
+  },
+  {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -142,7 +154,7 @@ lvim.plugins = {
       require("notify").setup {
         timeout = 175,
       }
-      vim.notify = require("notify")
+      vim.notify = require "notify"
     end,
   },
   {
