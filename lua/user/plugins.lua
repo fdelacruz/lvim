@@ -102,18 +102,6 @@ lvim.plugins = {
     cmd = "MundoToggle",
   },
   {
-    "vim-test/vim-test",
-    cmd = {
-      "TestSuite",
-      "TestFile",
-      "TestEdit",
-      "TestNearest",
-      "TestLast",
-      "TestVisit",
-      "TestInfo",
-    },
-  },
-  {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -121,6 +109,8 @@ lvim.plugins = {
       "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-python",
       "haydenmeade/neotest-jest",
+      "nvim-neotest/neotest-vim-test",
+      "vim-test/vim-test",
     },
     lazy = true,
     config = function()

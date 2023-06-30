@@ -12,6 +12,7 @@ function M.setup()
         runner = "pytest",
       },
       require "neotest-jest",
+      require "neotest-vim-test",
     },
     -- overseer.nvim
     consumers = {
