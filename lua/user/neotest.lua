@@ -2,6 +2,9 @@ local M = {}
 
 function M.setup()
   require("neotest").setup {
+    quickfix = {
+        enabled = false,
+    },
     adapters = {
       require "neotest-python" {
         dap = {
