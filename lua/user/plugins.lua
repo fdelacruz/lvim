@@ -46,7 +46,7 @@ lvim.plugins = {
   "ggandor/leap.nvim",
   "nacro90/numb.nvim",
   {
-    "TimUntersberger/neogit",
+    "NeogitOrg/neogit",
     cmd = { "Neogit" },
     enabled = true,
     config = true,
