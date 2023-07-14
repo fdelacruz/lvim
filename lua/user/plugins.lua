@@ -5,6 +5,7 @@ lvim.plugins = {
   "karb94/neoscroll.nvim",
   {
     "j-hui/fidget.nvim",
+    branch = "legacy",
     event = "VeryLazy",
     config = true,
   },
