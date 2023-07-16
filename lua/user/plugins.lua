@@ -42,7 +42,18 @@ lvim.plugins = {
   },
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup {
+        integrations = {
+          neogit = true,
+        },
+      }
+    end,
+  },
   "ggandor/leap.nvim",
   "nacro90/numb.nvim",
   {
