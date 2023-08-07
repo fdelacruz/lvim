@@ -43,7 +43,7 @@ lvim.plugins = {
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",
   {
-    "fdelacruz/catppuccin",
+    "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
     config = function()
