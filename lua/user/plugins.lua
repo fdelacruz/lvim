@@ -58,6 +58,7 @@ lvim.plugins = {
   "nacro90/numb.nvim",
   {
     "NeogitOrg/neogit",
+    dependencies = { "nvim-lua/plenary.nvim" },
     cmd = { "Neogit" },
     enabled = true,
     config = true,
