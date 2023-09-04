@@ -59,9 +59,10 @@ lvim.plugins = {
   {
     "NeogitOrg/neogit",
     dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("user.neogit").setup()
+    end,
     cmd = { "Neogit" },
-    enabled = true,
-    config = true,
   },
   {
     "sindrets/diffview.nvim",
