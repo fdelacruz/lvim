@@ -1,7 +1,12 @@
 local M = {}
 
 function M.setup()
-  require("neogit").setup {
+  local status_ok, neogit = pcall(require, "neogit")
+  if not status_ok then
+    return
+  end
+
+  neogit.setup {
     disable_signs = false,
     disable_hint = true,
     disable_context_highlighting = false,
