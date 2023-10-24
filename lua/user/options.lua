@@ -22,7 +22,6 @@ lvim.keys.term_mode = { ["<C-l>"] = false }
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { command = "stylua" },
-  { command = "prettier" },
 }
 
 lvim.builtin.gitsigns.opts.signs = {
