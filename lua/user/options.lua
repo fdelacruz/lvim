@@ -18,12 +18,6 @@ lvim.builtin.breadcrumbs.active = true
 lvim.builtin.dap.active = true
 lvim.keys.term_mode = { ["<C-l>"] = false }
 
--- linters and formatters <https://www.lunarvim.org/docs/languages#lintingformatting>
-local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup {
-  { command = "stylua" },
-}
-
 lvim.builtin.gitsigns.opts.signs = {
   add = { text = "│" },
   change = { text = "│" },
