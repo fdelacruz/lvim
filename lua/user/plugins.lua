@@ -32,6 +32,7 @@ lvim.plugins = {
     config = function()
       require("gitblame").setup {
         enabled = false,
+        date_format = "%c (%r)"
       }
     end,
     event = "VeryLazy",
