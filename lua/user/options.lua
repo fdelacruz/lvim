@@ -76,15 +76,25 @@ local options = {
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.opt.fillchars = { fold = " " }
+vim.opt.fillchars = { eob = "-", fold = " " }
 vim.opt.foldmethod = "indent"              -- folding
 vim.opt.foldenable = false
 vim.opt.foldlevel = 99
-
-vim.opt.fillchars = vim.opt.fillchars + "eob: "
-vim.opt.fillchars.append { stl = " ", }
+vim.cmd([[set foldtext=CustomFoldText() ]])
 
 vim.opt.shortmess.append { c = true }
+
+vim.cmd([[
+function! CustomFoldText()
+  let indentation = indent(v:foldstart - 1)
+  let foldSize = 1 + v:foldend - v:foldstart
+  let foldSizeStr = " " . foldSize . " lines "
+  let foldLevelStr = repeat("+--", v:foldlevel)
+  let expansionString = repeat(" ", indentation)
+
+  return expansionString . foldLevelStr . foldSizeStr
+endfunction
+]])
 
 for k, v in pairs(options) do
   vim.opt[k] = v
