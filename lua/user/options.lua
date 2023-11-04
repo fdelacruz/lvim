@@ -29,6 +29,7 @@ lvim.builtin.gitsigns.opts.signs = {
 
 vim.opt.showtabline = 0
 
+
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -74,6 +75,11 @@ local options = {
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.opt.fillchars = { fold = " " }
+vim.opt.foldmethod = "indent"              -- folding
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
 
 vim.opt.fillchars = vim.opt.fillchars + "eob: "
 vim.opt.fillchars.append { stl = " ", }
