@@ -23,3 +23,4 @@ reload "user.colorizer"
 reload "user.lualine"
 reload "user.whichkey"
 require("leap").add_default_mappings()
+reload "user.neogit"
