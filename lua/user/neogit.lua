@@ -9,7 +9,7 @@ neogit.setup {
   -- Disables changing the buffer highlights based on where the cursor is.
   disable_context_highlighting = false,
   -- Disables signs for sections/items/hunks
-  disable_signs = true,
+  disable_signs = false,
   -- Do not ask to confirm the commit - just do it when the buffer is closed.
   disable_commit_confirmation = false,
   -- Changes what mode the Commit Editor starts in. `true` will leave nvim in normal mode, `false` will change nvim to
