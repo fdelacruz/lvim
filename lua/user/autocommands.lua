@@ -169,6 +169,13 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
   end,
 })
 
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "javascript" },
+  callback = function()
+    vim.cmd "set filetype=javascriptreact"
+  end,
+})
+
 -- vim.api.nvim_create_autocmd({ "ModeChanged" }, {
 --   callback = function()
 --     local luasnip = require "luasnip"
