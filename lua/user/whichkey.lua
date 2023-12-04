@@ -86,7 +86,7 @@ lvim.builtin.which_key.mappings["l"] = {
     "Workspace Diagnostics",
   },
   f = { "<cmd>lua vim.lsp.buf.format({ async = true })<CR>", "Format" },
-  F = { "<cmd>LspToggleAutoFormat<CR>", "Toggle Autoformat" },
+  F = { "<cmd>LvimToggleFormatOnSave<CR>", "Toggle Autoformat" },
   i = { "<cmd>LspInfo<CR>", "Info" },
   h = { "<cmd>lua require('lsp-inlayhints').toggle()<CR>", "Toggle Hints" },
   H = { "<cmd>IlluminationToggle<CR>", "Toggle Doc HL" },
